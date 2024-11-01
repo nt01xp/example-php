@@ -6,7 +6,7 @@
   header('Content-Type: text/plain; charset=utf-8');
   $id = isset($_GET['id'])?$_GET['id']:'litv-longturn14';
   $n=array(    
-    '4gtv-4gtv001' => [1, 2],//民視台灣台
+    '4gtv-4gtv001' => [1, 6],//民視台灣台
     '4gtv-4gtv003' => [1, 6],//民視第一台
     '4gtv-4gtv004' => [1, 8],//民視綜藝台
     '4gtv-4gtv006' => [1, 9],//豬哥亮歌廳秀
@@ -14,13 +14,13 @@
     '4gtv-4gtv010' => [1, 6],//非凡新聞台
     '4gtv-4gtv011' => [1, 6],//影迷數位電影台
     '4gtv-4gtv013' => [1, 6],//視納華仁紀實頻道
-    '4gtv-4gtv014' => [1, 8],//時尚運動X
+    '4gtv-4gtv014' => [1, 5],//時尚運動X
     '4gtv-4gtv018' => [1, 8],//達文西頻道
     '4gtv-4gtv034' => [1, 6],//八大精彩台
     '4gtv-4gtv039' => [1, 7],//八大綜藝台
     '4gtv-4gtv040' => [1, 8],//中視
     '4gtv-4gtv041' => [1, 8],//華視
-    '4gtv-4gtv042' => [1, 8],//公視戲劇
+    '4gtv-4gtv042' => [1, 6],//公視戲劇
     '4gtv-4gtv043' => [1, 9],//客家電視台
     '4gtv-4gtv044' => [1, 8],//靖天卡通台
     '4gtv-4gtv045' => [1, 8],//靖洋戲劇台
@@ -71,9 +71,9 @@
     'litv-ftv10' => [1, 7],//半島國際新聞台
     'litv-ftv13' => [1, 7],//民視新聞台
     'litv-ftv15' => [1, 7],//i-Fun動漫台
-    'litv-ftv16' => [1, 6],//好消息
-    'litv-ftv17' => [1, 6],//好消息2台
-    'litv-longturn01' => [4, 6],//龍華卡通台
+    'litv-ftv16' => [1, 2],//好消息
+    'litv-ftv17' => [1, 2],//好消息2台
+    'litv-longturn01' => [5, 3],//龍華卡通台
     'litv-longturn03' => [5, 6],//龍華電影台
     'litv-longturn04' => [5, 6],//博斯魅力台
     'litv-longturn05' => [5, 2],//博斯高球台
@@ -93,7 +93,7 @@
     'litv-longturn20' => [5, 6],//ELTV生活英語台
     'litv-longturn21' => [5, 2],//龍華經典台
     'litv-longturn22' => [5, 2],//台灣戲劇台
-    'litv-longturn23' => [5, 6],//寰宇財經台  
+    'litv-longturn23' => [5, 2],//寰宇財經台  
     );
   $timestamp = intval(time()/4-355017625);
   $t=$timestamp*4;
