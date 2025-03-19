@@ -8,7 +8,7 @@ header('Content-Type: text/plain; charset=utf-8');
 $php='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];$id = isset($_GET['id']) ? $_GET['id'] : 'litv-longturn14';
 
 $n=array(
-                '4gtv-4gtv001' => [1, 6],//民視台灣台
+  '4gtv-4gtv001' => [1, 6],//民視台灣台
   '4gtv-4gtv156' => [1, 2],//民視台灣台
   '4gtv-4gtv002' => [1, 10],//民視
   '4gtv-4gtv003' => [1, 6],//民視第一台
