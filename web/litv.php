@@ -67,13 +67,13 @@
     '4gtv-4gtv153' => [1, 2],//東森財經新聞台
     '4gtv-4gtv155' => [1, 6],//民視
     '4gtv-4gtv156' => [1, 2],//寰宇新聞台灣台
-    '4gtv-4gtv158' => [5, 6],//寰宇財經台    
+    '4gtv-4gtv158' => [5, 6],//寰宇財經台
+    'iNEWS' => [5, 6],//三立新聞iNEWS
     'litv-ftv03' => [1, 7],//VOA美國之音
     'litv-ftv07' => [1, 7],//民視旅遊台
     'litv-ftv09' => [1, 2],//民視影劇台
     'litv-ftv10' => [1, 7],//半島國際新聞台
     'litv-ftv13' => [1, 7],//民視新聞台
-    'litv-ftv15' => [1, 7],//影迷數位紀實台
     'litv-ftv16' => [1, 2],//好消息
     'litv-ftv17' => [1, 2],//好消息2台
     'litv-longturn01' => [1, 2],//龍華卡通台
@@ -94,8 +94,7 @@
     'litv-longturn19' => [5, 6],//Smart知識台
     'litv-longturn20' => [5, 6],//ELTV生活英語台
     'litv-longturn21' => [5, 2],//龍華經典台
-    'litv-longturn22' => [5, 2],//台灣戲劇台
-    'iNEWS' => [5, 6],//三立新聞iNEWS    
+    'litv-longturn22' => [5, 2],//台灣戲劇台    
     );
   $timestamp = intval(time()/4-355017625);
   $t=$timestamp*4;
@@ -105,7 +104,7 @@
   $current.= "#EXT-X-MEDIA-SEQUENCE:{$timestamp}"."\r\n";
   for ($i=0; $i<3; $i++) {
         $current.= "#EXTINF:4,"."\r\n";
-    $current.="https://ntdfreevcpc-tgc.cdn.hinet.net//live/pool/{$id}/litv-pc/{$id}-avc1_6000000={$n[$id][0]}-mp4a_134000_zho={$n[$id][1]}-begin={$t}0000000-dur=40000000-seq={$timestamp}.ts"."\r\n";
+    $current.="https://ntdfreevcpc-tgc.cdn.hinet.net/live/pool/{$id}/litv-pc/{$id}-avc1_6000000={$n[$id][0]}-mp4a_134000_zho={$n[$id][1]}-begin={$t}0000000-dur=40000000-seq={$timestamp}.ts"."\r\n";
         $timestamp = $timestamp+1;
     $t=$t+4;
         }
@@ -113,5 +112,3 @@
   header('Content-Disposition: inline; filename='.$id.'.m3u8');
   header('Content-Length: ' . strlen($current));
      echo $current;
-exit();
-?>
