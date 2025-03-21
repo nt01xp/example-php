@@ -89,7 +89,7 @@
     'litv-longturn11' => [5, 2],//龍華日韓台
     'litv-longturn12' => [5, 2],//龍華偶像台
     'litv-longturn13' => [4, 2],//博斯無限二台
-    'litv-longturn14' => [4, 2],//寰宇新聞
+    'litv-longturn14' => [4, 2],//寰宇新聞 
     'litv-longturn18' => [5, 6],//龍華戲劇台
     'litv-longturn19' => [5, 6],//Smart知識台
     'litv-longturn20' => [5, 6],//ELTV生活英語台
@@ -104,7 +104,7 @@
   $current.= "#EXT-X-MEDIA-SEQUENCE:{$timestamp}"."\r\n";
   for ($i=0; $i<3; $i++) {
         $current.= "#EXTINF:4,"."\r\n";
-    $current.="https://ntdfreevcpc-tgc.cdn.hinet.net/live/pool/{$id}/litv-pc/{$id}-avc1_6000000={$n[$id][0]}-mp4a_134000_zho={$n[$id][1]}-begin={$t}0000000-dur=40000000-seq={$timestamp}.ts"."\r\n";
+    $current.="https://ntdpc-tgc.cdn.hinet.net/live/pool/{$id}/litv-pc/{$id}-avc1_6000000={$n[$id][0]}-mp4a_134000_zho={$n[$id][1]}-begin={$t}0000000-dur=40000000-seq={$timestamp}.ts"."\r\n";
         $timestamp = $timestamp+1;
     $t=$t+4;
         }
