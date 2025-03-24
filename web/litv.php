@@ -74,6 +74,7 @@
     'litv-ftv09' => [1, 2],//民視影劇台
     'litv-ftv10' => [1, 7],//半島國際新聞台
     'litv-ftv13' => [1, 7],//民視新聞台
+    'litv-ftv15' => [1, 7],//影迷數位紀實台
     'litv-ftv16' => [1, 2],//好消息
     'litv-ftv17' => [1, 2],//好消息2台
     'litv-longturn01' => [1, 2],//龍華卡通台
@@ -89,7 +90,7 @@
     'litv-longturn11' => [5, 2],//龍華日韓台
     'litv-longturn12' => [5, 2],//龍華偶像台
     'litv-longturn13' => [4, 2],//博斯無限二台
-    'litv-longturn14' => [4, 2],//寰宇新聞
+    'litv-longturn14' => [4, 2],//寰宇新聞 
     'litv-longturn18' => [5, 6],//龍華戲劇台
     'litv-longturn19' => [5, 6],//Smart知識台
     'litv-longturn20' => [5, 6],//ELTV生活英語台
